@@ -3,25 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css" integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray: '#d3d3d3',
+            orange: '#ec5242',
+            darkblue: '#272a31'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="md:flex">
-    <div class="md:flex-shrink-0">
-      <img class="rounded-lg md:w-56" src="/img/shopping.jpg" alt="Woman paying for a purchase">
-    </div>
-    <div class="mt-4 md:mt-0 md:ml-6">
-      <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
-        Marketing
-      </div>
-      <a href="/get-started" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
-        Finding customers for your new business
+  <div class="container mx-auto px-6 pb-20">
+  <nav class="border-gray text-darkblue">
+    <button type="button" class="inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden burger" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg viewBox="0 0 120 110" width="40" height="40">
+        <rect y="0" width="120" height="20"></rect>
+        <rect y="40" width="120" height="20"></rect>
+        <rect y="80" width="120" height="20"></rect>
+        <span class="sr-only">Menu</span>
+      </svg>
+    </button>
+    <div class="hidden max-w-screen-xl items-center justify-between mx-auto p-8 md:grid grid-cols-3 gap-4">
+      <a href="#" class="flex items-center col">
+          <img src="assets/img/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap">513 analytics</span>
       </a>
-      <p class="mt-2 text-gray-600">
-        Getting a new business off the ground is a lot of hard work.
-        Here are five ideas you can use to find your first customers.
-      </p>
+      <div class="flex justify-around w-auto col-span-6 md:col-span-2">
+      <div class="nav-link">Home</div>
+      <div class="nav-link">About</div>
+      <div class="nav-link">Analysis</div>
+      <div class="nav-link">Latest News</div>
+      <div class="nav-link">Transfers</div>
     </div>
-  </div>
+    </div>
+  </nav>
+        <header class="h-auto">
+          <div class="flex flex-col mt-12">
+          <p class="text-orange"><span class="supporting-text">"The Future Is Now"</span>
+          <h1 class="text-transparent uppercase header-heading leading-none py-2" >Leagues Players Draft 2023
+          </h1>
+        </div>
+        <div class="info p-6 my-6 border-4 border-white"><p class="text-stone-600">The next generation of the Lorem Ipsum League takes center stage on the biggest night of the Lorem Ipsum offseason. For 20 players, their lifelong dream is made a reality. Follow us and get the latest updates!
+        </p></div>
+        <h2 class="text-stone-600 text-xl"><span class="uppercase date-time text-lg md:text-3xl">24.06.2023 (SAT)<br /> 19:00 (GMT)<br /></span>
+          @ Vilis Skuja conference hall, Lorem upon Ipsum, Grothland
+        </h2>
+        </header>
+      </div>
+        <main class="bg-gray">
+          <div class="container mx-auto px-3">
+            <h3 class="schedule-heading text-white font-semibold text-center pt-7 text-xl">Main Program</h3>
+            <ul class="flex schedule flex-col gap-2">
+              <li class="schedule-item grid grid-cols-5 gap-3 items-center justify-items-center py-5 pr-7 pl-2">
+                <svg class="col-span-1 icon icon-tabler icon-tabler-microphone-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ec5242" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M15.002 12.9a5 5 0 1 0 -3.902 -3.9" />
+                  <path d="M15.002 12.9l-3.902 -3.899l-7.513 8.584a2 2 0 1 0 2.827 2.83l8.588 -7.515z" />
+                </svg>
+        <h4 class="col-span-2 text-orange text-xs md:text-lg">Audio Broadcasting</h4>
+        <p class="col-span-3 col-start-4 text-white text-sm md:text-lg">We start our event coverage with audio broadcasting. During this time, we analyze different possible outcomes for each team, discuss rumors, and introduce the main heroes of this year's students' league.</p>
+        <li class="schedule-item grid grid-cols-5 gap-3 items-center justify-items-center py-5 pr-7 pl-2">
+          <svg class="col-span-1 icon icon-tabler icon-tabler-microphone-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ec5242" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15.002 12.9a5 5 0 1 0 -3.902 -3.9" />
+            <path d="M15.002 12.9l-3.902 -3.899l-7.513 8.584a2 2 0 1 0 2.827 2.83l8.588 -7.515z" />
+          </svg>
+  <h4 class="col-span-2 text-orange text-xs md:text-lg">Audio Broadcasting</h4>
+  <p class="col-span-3 col-start-4 text-white text-sm md:text-lg">We start our event coverage with audio broadcasting. During this time, we analyze different possible outcomes for each team, discuss rumors, and introduce the main heroes of this year's students' league.</p>
+</li>
+      </ul>
+    </div>
+      </main>
+        <footer></footer>
+        <script src="assets/js/app.js"></script>
 </body>
 </html>
