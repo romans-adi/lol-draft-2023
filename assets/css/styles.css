@@ -16,6 +16,37 @@ body {
   background-size: cover;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.bar {
+  font-size: 0.7rem;
+}
+
+.bar-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link:hover {
+  transition: all 300ms ease-in;
+  border: 1px solid transparent;
+  box-shadow: 0.1em 0 0.3em #944037;
+  background-color: #ec5242;
+  color: #fff;
+  font-weight: 600;
+}
+
+.league-pass {
+  border: 4px solid #ec5242;
+  transition: all 300ms ease-in;
+}
+
 .burger {
   fill: #333;
 }
@@ -52,9 +83,11 @@ main {
 
 .schedule-item {
   background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
 }
 
-.schedule-heading::after {
+.schedule-heading::after,
+.partners-heading::after {
   content: "";
   display: block;
   width: 3rem;
@@ -64,6 +97,37 @@ main {
   margin: 0.5rem auto 3rem;
 }
 
+.partners-heading::after {
+  max-width: 40%;
+  margin: 0.5rem auto 1.3rem;
+}
+
+.schedule-item:hover {
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
 h4 {
   font-family: 'COCOGOOSE', sans-serif;
+  font-size: 16px;
+}
+
+.partners-list li {
+  width: 20%;
+  height: 20%;
+}
+
+.partners-list li img {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .partners-heading::after {
+    max-width: 40%;
+    margin: 1rem auto 3rem;
+  }
 }
