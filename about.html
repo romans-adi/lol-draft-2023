@@ -22,7 +22,7 @@
   <title>LIL Draft Picks 2023: About</title>
 </head>
 <body>
-  <nav class="fixed md:static">
+  <nav class="fixed md:static md:shadow-lg md:shadow-black">
     <div class="bg-stone-800 flex justify-center">
     <ul class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl w-full text-white gap-3 justify-end px-20 items-center text-sm">
       <li class="bar-item"><img src="assets//img/GitHub.png" alt="GitHub"></li>
@@ -38,28 +38,28 @@
       </select></li>
     </ul>
   </div>
-      <button type="button" class="nav-toggle inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden" aria-controls="nav-menu" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
-          <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
-          <rect y="40" width="120" height="20" class="burger-line burger-line-middle"></rect>
-          <rect y="80" width="120" height="20" class="burger-line burger-line-bottom"></rect>
-        </svg>
-      </button>
-      <div class="items-center justify-between mx-auto px-8 py-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl">
-        <a href="index.html" class="hidden md:flex items-center col logo">
-            <img src="assets/img/event-logo.png" class="h-8 mr-3" alt="LIL Draft 2023 Logo" />
-            <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum League<br />Draft 2023</span>
-        </a>
-        <ul id="nav-menu" class="hidden nav-menu md:flex flex-col md:flex-row justify-around md:w-auto col-span-6 md:col-span-2 text-orange font-semibold md:text- md:text-stone-400 items-center" data-visible="false">
-        <a href="about.html" target="_blank"><li class="nav-link p-2">About</li></a>
-        <a href="#"><li class="nav-link p-2">Tickets</li></a>
-        <a href="#"><li class="nav-link p-2">News</li></a>
-        <a href="#"><li class="nav-link p-2">Prospects</li></a>
-        <a href="#" class="hidden md:block league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold"><li>League pass</li></a>
-      </ul>
-      </div>
-    </nav>
+  <button type="button" class="nav-toggle inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden fixed z-40" aria-controls="nav-menu" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
+      <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
+      <rect y="40" width="120" height="20" class="burger-line burger-line-middle"></rect>
+      <rect y="80" width="120" height="20" class="burger-line burger-line-bottom"></rect>
+    </svg>
+  </button>
+  <div class="items-center justify-between mx-auto md:px-8 pb-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl fixed md:static top-2">
+    <a href="index.html" class="hidden md:flex items-center col logo">
+        <img src="assets/img/event-logo.png" class="h-8 mr-3" alt="LIL Draft 2023 Logo" />
+        <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum League<br />Draft 2023</span>
+    </a>
+    <ul id="nav-menu" class="nav-menu border-r-2 border-transparent rounded-r-lg text-2xl md:text-sm pt-12 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center" data-visible="false">
+    <a href="index.html" target="_blank"><li class="nav-link p-2">Home</li></a>
+    <a href="#location"><li class="nav-link p-2">Venue</li></a>
+    <a href="#hall-of-fame" target="_blank"><li class="nav-link p-2">Hall of Fame</li></a>
+    <a href="index.html#prospects"><li class="nav-link p-2">Prospects</li></a>
+    <a href="#" class="hidden md:block league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold"><li>League pass</li></a>
+  </ul>
+  </div>
+</nav>
         <header class="h-100 text-stone-600 text-center pt-20">
           <div class="container flex flex-col mx-auto px-6 pb-10 md:w-2/4">
           <div class="flex flex-col md:mt-12 items-center justify-center">
@@ -84,8 +84,8 @@
 </div>
 <p class="text-justify px-6 text-stone-600 flex flex-col justify-center md:indent-8 md:w-1/2 md:ml-4">Vilis Skuja conference hall is located in Vilis Skuja Business Centre just in the heart of Lorem upon Ipsum city. It's equipped with banquet halls and up-to-date facilities for holding various events like international conventions and business seminars. Our league representatives with the Vilis Skuja team offer you a great and wide range of services during this day. Our main goal is to make your day joyful and unforgettable!</p>
 </div>
-<p class="text-center text-red-600 font-semibold py-10 text-2xl leading-8">Regulations inside the Vilis Skuja conference hall<br /><span class="regulations-moto text-black font-bold uppercase text-lg">Stop Think Check</span></p>
-<img src="assets/img/prohibited-items.png" alt="Prohibited Items">
+<p class="text-center text-red-600 font-semibold py-10 px-6 text-2xl leading-8">Regulations inside the Vilis Skuja conference hall<br /><span class="regulations-moto text-black font-bold uppercase text-lg">Stop Think Check</span></p>
+<img class="px-6" src="assets/img/prohibited-items.png" alt="Prohibited Items">
 </section>
 <section id="hall-of-fame" class="hall-of-fame border-b-2 border-stone-400 text-stone-700">
 <h2 class="hall-of-fame-heading text-3xl text-semibold text-center py-10">Hall of Fame induction</h2>
@@ -139,3 +139,6 @@
         </div>
         </footer>
         </div>
+        <script src="assets/js/app.js"></script>
+</body>
+</html>

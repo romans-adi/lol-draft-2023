@@ -72,6 +72,22 @@ select {
   transform-origin: center;
 }
 
+.nav-toggle[aria-expanded=true] .burger {
+  fill: #ec5242;
+}
+
+.nav-toggle[aria-expanded=true] .burger .burger-line-top {
+  rotate: 45deg;
+}
+
+.nav-toggle[aria-expanded=true] .burger .burger-line-middle {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded=true] .burger .burger-line-bottom {
+  rotate: -45deg;
+}
+
 .supporting-text {
   font-size: 1.2rem;
 }
@@ -173,7 +189,7 @@ h4 {
   width: 100%;
 }
 
-.hall img:hover {
+.hall img:active {
   z-index: 100;
 }
 
@@ -201,7 +217,8 @@ h4 {
 @media screen and (max-width: 768px) {
   .nav-menu {
     background: hsla(228, 7.5%, 13.1%, 0.4);
-    backdrop-filter: blur(0.2rem);
+    backdrop-filter: blur(0.4rem);
+    transition: transform 800ms ease-in-out;
   }
 
   .nav-menu::shadow {
@@ -209,13 +226,15 @@ h4 {
   }
 
   .nav-menu[data-visible=false] {
-    transform: translateX(-120%);
+    transform: translateX(-200%);
   }
 
   .nav-menu [data-visible=true] {
     transform: translateX(0%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 5.75rem;
     padding: 3em 0;
     position: fixed;
@@ -223,14 +242,27 @@ h4 {
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
     width: 40%;
-    border: 2px solid transparent;
-    border-radius: 8%;
     font-size: 20px;
+    border-radius: 8%;
   }
 
   .nav-menu a li {
     transition: all 500ms ease-out;
     letter-spacing: 0.166rem;
+    margin: 0.4rem 0;
+  }
+
+  .nav-menu a li::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    border-top: 1px solid #ec5242;
+    border-radius: 1.5rem;
+    margin: 0.2rem auto;
+  }
+
+  .nav-menu a li:active {
+    background-color: #ec5242;
   }
 }
 
