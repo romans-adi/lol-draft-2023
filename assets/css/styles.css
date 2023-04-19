@@ -11,9 +11,25 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: 'Lato', sans-serif;
+}
+
+header {
   background: url('../img/background.jpg') no-repeat;
   background-size: cover;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.bg-dark-texture {
+  background: url('../img/main-bg.png') repeat center;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 select {
@@ -61,12 +77,15 @@ select {
 }
 
 .header-heading {
+  font-size: 2.2rem;
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+.header-heading.main {
   background: url('../img/text-bg.jpg') no-repeat left;
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.2rem;
-  font-family: 'COCOGOOSE', sans-serif;
 }
 
 .info {
@@ -75,10 +94,6 @@ select {
 
 .date-time {
   font-family: 'COCOGOOSE', sans-serif;
-}
-
-main {
-  background: url('../img/main-bg.png') repeat center;
 }
 
 .schedule-item {
@@ -114,7 +129,18 @@ h4 {
 
 .partners-list li {
   width: 20%;
-  height: 20%;
+  min-width: 100px;
+}
+
+.hall-of-famer {
+  width: 300px;
+  justify-content: space-between;
+}
+
+.hall-of-famer img {
+  width: 100%;
+  border: 1px transparent solid;
+  border-radius: 8%;
 }
 
 .partners-list li img {
@@ -125,9 +151,49 @@ h4 {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    background: hsla(228, 7.5%, 13.1%, 0.4);
+    backdrop-filter: blur(0.2rem);
+  }
+
+  .nav-menu::shadow {
+    background-color: rgba(37, 47, 137, 0.08);
+  }
+
+  .nav-menu[data-visible=false] {
+    transform: translateX(-120%);
+  }
+
+  .nav-menu [data-visible=true] {
+    transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
+    min-height: 5.75rem;
+    padding: 3em 0;
+    position: fixed;
+    z-index: 444;
+    margin: 1rem 1rem 0 0;
+    transition: transform 800ms ease-in-out;
+    width: 40%;
+    border: 2px solid transparent;
+    border-radius: 8%;
+    font-size: 20px;
+  }
+
+  .nav-menu a li {
+    transition: all 500ms ease-out;
+    letter-spacing: 0.166rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .partners-heading::after {
     max-width: 40%;
     margin: 1rem auto 3rem;
+  }
+
+  .hall-of-famer {
+    max-width: 200px;
   }
 }
