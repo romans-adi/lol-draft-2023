@@ -102,7 +102,10 @@ select {
 }
 
 .schedule-heading::after,
-.partners-heading::after {
+.partners-heading::after,
+.hall-heading::after,
+.hall-of-fame-heading::after,
+.hall-img-content-text::after {
   content: "";
   display: block;
   width: 3rem;
@@ -112,9 +115,17 @@ select {
   margin: 0.5rem auto 3rem;
 }
 
-.partners-heading::after {
+.partners-heading::after,
+.hall-heading::after,
+.hall-of-fame-heading::after,
+.hall-img-content-text::after {
   max-width: 40%;
   margin: 0.5rem auto 1.3rem;
+}
+
+.hall-heading::after,
+.hall-of-fame-heading::after {
+  margin: 1rem auto;
 }
 
 .schedule-item:hover {
@@ -127,17 +138,32 @@ h4 {
   font-size: 16px;
 }
 
-.partners-list li {
-  width: 20%;
-  min-width: 100px;
+.regulations-moto {
+  word-spacing: 1.4rem;
 }
 
-.hall-of-famer {
-  width: 300px;
-  justify-content: space-between;
+.location img {
+  width: 100%;
+  max-width: 500px;
 }
 
-.hall-of-famer img {
+.hall {
+  position: relative;
+  max-width: 500px;
+}
+
+.hall::after {
+  content: '';
+  background: rgba(207, 58, 32, 0.527);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px transparent solid;
+  border-radius: 8%;
+}
+
+.hall-of-famer img,
+.hall img {
   width: 100%;
   border: 1px transparent solid;
   border-radius: 8%;
@@ -145,6 +171,27 @@ h4 {
 
 .partners-list li img {
   width: 100%;
+}
+
+.hall img:hover {
+  z-index: 100;
+}
+
+.hall:hover::after {
+  display: none;
+}
+
+.hall-img-content-text {
+  transition: all 1s ease-in-out;
+}
+
+.partners-list li {
+  width: 20%;
+  min-width: 100px;
+}
+
+.hall-of-famer {
+  width: 300px;
 }
 
 .copyright {
