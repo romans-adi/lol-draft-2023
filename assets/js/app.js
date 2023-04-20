@@ -46,6 +46,7 @@ const container = document.getElementById('prospects-set');
 
 const prospects = [
     {
+      id: 1,
       name: 'Walter Scott',
       team: 'Sin Valley Stars',
       age: 19,
@@ -55,6 +56,7 @@ const prospects = [
       image: 'assets/img/prospects/player-1.png',
     },
     {
+      id: 2,
       name: 'Chad Lester',
       team: 'Credwell Steeds',
       age: 18,
@@ -64,6 +66,7 @@ const prospects = [
       image: 'assets/img/prospects/player-2.png',
     },
     {
+      id: 3,
       name: 'Adalberto Najera',
       team: 'Johnstown Milebreakers',
       age: 19,
@@ -73,8 +76,9 @@ const prospects = [
       image: 'assets/img/prospects/player-3.png',
     },
     {
+      id: 4,
       name: 'John Karanowsky',
-      team: 'Werkstone Crocodiles"',
+      team: 'Werkstone Crocodiles',
       age: 18,
       position: 'G/F',
       description:
@@ -82,6 +86,7 @@ const prospects = [
         image: 'assets/img/prospects/player-4.png',
     },
     {
+      id: 5,
       name: 'Chung Kuo',
       team: 'Stonebo Fires',
       age: 18,
@@ -91,6 +96,7 @@ const prospects = [
         image: 'assets/img/prospects/player-5.png',
     },
     {
+      id: 6,
       name: 'Thomas E. Field',
       team: 'North Clarecro Manatees',
       age: 19,
@@ -100,6 +106,7 @@ const prospects = [
         image: 'assets/img/prospects/player-6.png',
     },
     {
+      id: 7,
       name: 'German Herrmann',
       team: 'Sonbay Hawks',
       age: 19,
@@ -109,6 +116,7 @@ const prospects = [
         image: 'assets/img/prospects/player-7.png',
     },
     {
+      id: 8,
       name: 'Yunus Jabr Handal',
       team: 'Wilshe Stormhunters',
       age: 19,
@@ -118,6 +126,7 @@ const prospects = [
         image: 'assets/img/prospects/player-8.png',
     },
     {
+      id: 9,
       name: 'Mitchell Moghadam',
       team: 'Amesmil Stings',
       age: 18,
@@ -127,6 +136,7 @@ const prospects = [
         image: 'assets/img/prospects/player-9.png',
     },
     {
+      id: 10,
       name: 'Eugene Bryant Jr.',
       team: 'New Lawperth Watchmen',
       age: 18,
@@ -136,3 +146,22 @@ const prospects = [
         image: 'assets/img/prospects/player-10.png',
     },
 ]
+
+prospects.forEach((prospect) => {
+  const card = document.createElement('div');
+  card.classList.add = 'prospect-card';
+  const content = `
+<div class="prospect-card flex mb-10 gap-6 justify-center" id="${prospect.id}">
+<img src="${prospect.image}" width="100%" class="prospect-photo rounded place-self-start pt-2" alt="${prospect.name}"
+  class="prospect-photo">
+</picture>
+<div class="prospect-card-content flex flex-col flex-1 items-stretch">
+<h3 class="prospect-card-heading text-xl relative font-semibold">${prospect.name}</h3>
+<h4 class="prospect-info text-lg">${prospect.position}, ${prospect.age}</h4>
+<p class="italic text-orange"><span class="text-black">College team:<br /></span>${prospect.team}</p>
+<p>${prospect.description}</p>
+</div>
+</div>
+`;
+  container.innerHTML += content;
+});

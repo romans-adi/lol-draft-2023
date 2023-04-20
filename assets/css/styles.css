@@ -1,6 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -97,6 +217,11 @@ select {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
+.header-heading-group {
+  -webkit-animation: bounce-top 4s both;
+  animation: bounce-top 4s both;
+}
+
 .header-heading.main {
   background: url('../img/text-bg.jpg') no-repeat left;
   background-size: cover;
@@ -121,7 +246,8 @@ select {
 .partners-heading::after,
 .hall-heading::after,
 .hall-of-fame-heading::after,
-.hall-img-content-text::after {
+.hall-img-content-text::after,
+.prospects-heading::after {
   content: "";
   display: block;
   width: 3rem;
@@ -139,8 +265,40 @@ select {
   margin: 0.5rem auto 1.3rem;
 }
 
+.prospect-card {
+  font-size: 14px;
+}
+
+.prospect-card-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("../img/prospects/prospects-bg.png") no-repeat top left;
+  background-size: cover;
+  position: absolute;
+  left: -150px;
+  transform: translateY(-40px);
+  z-index: 0;
+}
+
+.prospect-photo {
+  max-width: 100px;
+  z-index: 2;
+}
+
+.prospect-info::after {
+  content: "";
+  display: block;
+  width: 15px;
+  border-top: 0.165rem solid rgb(194, 194, 194);
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+}
+
 .hall-heading::after,
-.hall-of-fame-heading::after {
+.hall-of-fame-heading::after,
+.prospects-heading::after {
   margin: 1rem auto;
 }
 
@@ -149,7 +307,7 @@ select {
   cursor: pointer;
 }
 
-h4 {
+.goose {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 16px;
 }
@@ -274,5 +432,10 @@ h4 {
 
   .hall-of-famer {
     max-width: 200px;
+  }
+
+  .prospect-card-heading::after {
+    filter: opacity(0.5);
+    left: -150px;
   }
 }
