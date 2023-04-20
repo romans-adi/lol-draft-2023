@@ -155,8 +155,8 @@ prospects.forEach((prospect) => {
 <img src="${prospect.image}" width="100%" class="prospect-photo rounded place-self-start pt-2" alt="${prospect.name}"
   class="prospect-photo">
 </picture>
-<div class="prospect-card-content flex flex-col flex-1 items-stretch">
-<h3 class="prospect-card-heading text-xl relative font-semibold">${prospect.name}</h3>
+<div class="prospect-card-content relative flex flex-col tems-stretch">
+<h3 class="prospect-card-heading text-lg font-semibold">${prospect.name}</h3>
 <h4 class="prospect-info text-lg">${prospect.position}, ${prospect.age}</h4>
 <p class="italic text-orange"><span class="text-black">College team:<br /></span>${prospect.team}</p>
 <p>${prospect.description}</p>

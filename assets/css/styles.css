@@ -269,7 +269,7 @@ select {
   font-size: 14px;
 }
 
-.prospect-card-heading::after {
+.prospect-card-content::after {
   content: "";
   display: block;
   width: 80px;
@@ -278,8 +278,8 @@ select {
   background-size: cover;
   position: absolute;
   left: -150px;
-  transform: translateY(-40px);
   z-index: 0;
+  transform: translateY(-20px);
 }
 
 .prospect-photo {
@@ -372,7 +372,7 @@ select {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-menu {
     background: hsla(228, 7.5%, 13.1%, 0.4);
     backdrop-filter: blur(0.4rem);
@@ -422,6 +422,10 @@ select {
   .nav-menu a li:active {
     background-color: #ec5242;
   }
+
+  .prospect-card-heading::after {
+    transform: translateY(-40px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -434,8 +438,7 @@ select {
     max-width: 200px;
   }
 
-  .prospect-card-heading::after {
+  .prospect-card-content::after {
     filter: opacity(0.5);
-    left: -150px;
   }
 }
