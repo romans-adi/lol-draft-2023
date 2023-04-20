@@ -160,6 +160,11 @@ select {
   text-overflow: '';
 }
 
+select option {
+  background-color: #ec5242;
+  color: #fff;
+}
+
 .bar {
   font-size: 0.7rem;
 }
@@ -404,13 +409,13 @@ select {
     border-radius: 8%;
   }
 
-  .nav-menu a li {
+  #nav-menu ul li a {
     transition: all 500ms ease-out;
     letter-spacing: 0.166rem;
     margin: 0.4rem 0;
   }
 
-  .nav-menu a li::after {
+  #nav-menu ul li a::after {
     content: "";
     display: block;
     width: 3rem;
@@ -419,7 +424,7 @@ select {
     margin: 0.2rem auto;
   }
 
-  .nav-menu a li:active {
+  #nav-menu li a:active {
     background-color: #ec5242;
   }
 
