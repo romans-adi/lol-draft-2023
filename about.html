@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lorem Ipsum league 2023 Draft Pick website">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicons/site.webmanifest">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +26,7 @@
   <title>LIL Draft Picks 2023: About</title>
 </head>
 <body>
-  <nav class="fixed md:static md:shadow-lg md:shadow-black">
+  <nav class="fixed md:static md:shadow-lg md:shadow-black z-50">
     <div class="bg-stone-800 flex justify-center">
     <ul class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl w-full text-white gap-3 justify-end px-20 items-center text-sm">
       <li class="bar-item"><img src="assets//img/GitHub.png" alt="GitHub"></li>
@@ -38,7 +42,7 @@
       </select></li>
     </ul>
   </div>
-  <button type="button" class="nav-toggle inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden fixed z-40" aria-controls="nav-menu" aria-expanded="false">
+  <button type="button" class="nav-toggle inline-flex items-center pt-8 md:p-6 ml-3 text-sm md:hidden fixed z-50" aria-controls="nav-menu" aria-expanded="false">
     <span class="sr-only">Open main menu</span>
     <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
       <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
@@ -51,7 +55,7 @@
         <img src="assets/img/event-logo.png" class="h-8 mr-3" alt="LIL Draft 2023 Logo" />
         <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum League<br />Draft 2023</span>
     </a>
-    <ul id="nav-menu" class="nav-menu border-r-2 border-transparent rounded-r-lg text-2xl md:text-sm pt-12 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center" data-visible="false">
+    <ul id="nav-menu" class="nav-menu border-r-2 border-transparent rounded-r-lg text-2xl md:text-sm pt-16 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center" data-visible="false">
     <a href="index.html" target="_blank"><li class="nav-link p-2">Home</li></a>
     <a href="#location"><li class="nav-link p-2">Venue</li></a>
     <a href="#hall-of-fame" target="_blank"><li class="nav-link p-2">Hall of Fame</li></a>
@@ -60,6 +64,7 @@
   </ul>
   </div>
 </nav>
+<div id="wrapper" class="wrapper flex flex-col h-full">
         <header class="h-100 text-stone-600 text-center pt-20">
           <div class="container flex flex-col mx-auto px-6 pb-10 md:w-2/4">
           <div class="flex flex-col md:mt-12 items-center justify-center">

@@ -190,7 +190,7 @@ h4 {
 }
 
 .hall img:active {
-  z-index: 100;
+  z-index: 44;
 }
 
 .hall:hover::after {
@@ -238,7 +238,7 @@ h4 {
     min-height: 5.75rem;
     padding: 3em 0;
     position: fixed;
-    z-index: 444;
+    z-index: 70;
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
     width: 40%;
