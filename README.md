@@ -47,7 +47,6 @@
     <li>Best practice of HTML and CSS</li>
     <li>Best practice of JavaScript</li>
     <li>Dynamical elements</li>
-    <li>NextGen images</li>
     <li>High performance and accessibility</li>
   </ul>
 
