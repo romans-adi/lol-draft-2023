@@ -5,6 +5,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLink = document.querySelectorAll('.nav-link');
 const burgerLineTop = document.querySelector('.burger-line-top');
 const burgerLineBottom = document.querySelector('.burger-line-bottom');
+const wrapper = document.getElementById('wrapper');
 
 function toggleBurger() {
   const width = window.innerWidth;
@@ -31,3 +32,10 @@ navToggle.addEventListener('click', () => {
 navLink.forEach((navLink) => navLink.addEventListener('click', () => {
   toggleBurger();
 }));
+
+wrapper.addEventListener('click', () => {
+  const visibility = navMenu.getAttribute('data-visible');
+  if (visibility === 'true') {
+    toggleBurger();
+  }
+});

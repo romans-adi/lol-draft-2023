@@ -1,6 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +158,11 @@ select {
   appearance: none;
   text-indent: 1px;
   text-overflow: '';
+}
+
+select option {
+  background-color: #ec5242;
+  color: #fff;
 }
 
 .bar {
@@ -97,6 +222,11 @@ select {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
+.header-heading-group {
+  -webkit-animation: bounce-top 4s both;
+  animation: bounce-top 4s both;
+}
+
 .header-heading.main {
   background: url('../img/text-bg.jpg') no-repeat left;
   background-size: cover;
@@ -121,7 +251,8 @@ select {
 .partners-heading::after,
 .hall-heading::after,
 .hall-of-fame-heading::after,
-.hall-img-content-text::after {
+.hall-img-content-text::after,
+.prospects-heading::after {
   content: "";
   display: block;
   width: 3rem;
@@ -139,8 +270,40 @@ select {
   margin: 0.5rem auto 1.3rem;
 }
 
+.prospect-card {
+  font-size: 14px;
+}
+
+.prospect-card-content::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("../img/prospects/prospects-bg.png") no-repeat top left;
+  background-size: cover;
+  position: absolute;
+  left: -150px;
+  z-index: 0;
+  transform: translateY(-20px);
+}
+
+.prospect-photo {
+  max-width: 100px;
+  z-index: 2;
+}
+
+.prospect-info::after {
+  content: "";
+  display: block;
+  width: 15px;
+  border-top: 0.165rem solid rgb(194, 194, 194);
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+}
+
 .hall-heading::after,
-.hall-of-fame-heading::after {
+.hall-of-fame-heading::after,
+.prospects-heading::after {
   margin: 1rem auto;
 }
 
@@ -149,7 +312,7 @@ select {
   cursor: pointer;
 }
 
-h4 {
+.goose {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 16px;
 }
@@ -190,7 +353,7 @@ h4 {
 }
 
 .hall img:active {
-  z-index: 100;
+  z-index: 44;
 }
 
 .hall:hover::after {
@@ -214,7 +377,7 @@ h4 {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-menu {
     background: hsla(228, 7.5%, 13.1%, 0.4);
     backdrop-filter: blur(0.4rem);
@@ -238,7 +401,7 @@ h4 {
     min-height: 5.75rem;
     padding: 3em 0;
     position: fixed;
-    z-index: 444;
+    z-index: 70;
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
     width: 40%;
@@ -246,13 +409,13 @@ h4 {
     border-radius: 8%;
   }
 
-  .nav-menu a li {
+  #nav-menu ul li a {
     transition: all 500ms ease-out;
     letter-spacing: 0.166rem;
     margin: 0.4rem 0;
   }
 
-  .nav-menu a li::after {
+  #nav-menu ul li a::after {
     content: "";
     display: block;
     width: 3rem;
@@ -261,8 +424,12 @@ h4 {
     margin: 0.2rem auto;
   }
 
-  .nav-menu a li:active {
+  #nav-menu li a:active {
     background-color: #ec5242;
+  }
+
+  .prospect-card-heading::after {
+    transform: translateY(-40px);
   }
 }
 
@@ -274,5 +441,9 @@ h4 {
 
   .hall-of-famer {
     max-width: 200px;
+  }
+
+  .prospect-card-content::after {
+    filter: opacity(0.5);
   }
 }
