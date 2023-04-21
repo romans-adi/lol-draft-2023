@@ -20,7 +20,7 @@ const prospects = [
     age: 18,
     position: 'G',
     description:
-      'Smith holds the early crown as the top incoming college guard prospect as an unusually gifted improviser and energy-bringer who should be able to play point guard full time in the NBA.',
+      'Lester holds the early crown as the top incoming college guard prospect as an unusually gifted improviser and energy-bringer who should be able to play point guard full time in the NBA.',
     image: 'assets/img/prospects/player-2.png',
   },
   {
@@ -60,7 +60,7 @@ const prospects = [
     age: 19,
     position: 'G/F',
     description:
-      'Boasting electric athleticism comparable to that of his twin brother and a more aggressive mentality as both a defender and scorer, Thompson presents plenty of upside in his own right.',
+      'Boasting electric athleticism comparable to that of his twin brother and a more aggressive mentality as both a defender and scorer, Thomas presents plenty of upside in his own right.',
     image: 'assets/img/prospects/player-6.png',
   },
   {
@@ -90,7 +90,7 @@ const prospects = [
     age: 18,
     position: 'G',
     description:
-      'While not exceptionally fast or quick, Wallace has a strong frame, good length, and a terrific instinct for blowing up plays on the defensive end. He’s smooth with the ball, rarely gets sped up, and enters college with a developed floater and a pretty reliable jump shot.',
+      'While not exceptionally fast or quick, Mitchell has a strong frame, good length, and a terrific instinct for blowing up plays on the defensive end. He’s smooth with the ball, rarely gets sped up, and enters college with a developed floater and a pretty reliable jump shot.',
     image: 'assets/img/prospects/player-9.png',
   },
   {

@@ -395,6 +395,7 @@ select option {
   .nav-menu [data-visible=true] {
     transform: translateX(0%);
     display: flex;
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -404,7 +405,6 @@ select option {
     z-index: 70;
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
-    width: 40%;
     font-size: 20px;
     border-radius: 8%;
   }
