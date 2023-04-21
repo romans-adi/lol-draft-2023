@@ -58,7 +58,7 @@
 
 - [Online version of my project](https://romans-adi.github.io/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to  top</a>)</p>
 
 <!-- VIDEO PRESENTATION -->
 
