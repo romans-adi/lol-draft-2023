@@ -146,7 +146,6 @@ html {
 
 body {
   height: 100%;
-  overflow: scroll;
   font-family: 'Lato', sans-serif;
 }
 
@@ -393,10 +392,6 @@ select option {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    overflow: hidden;
-  }
-
   .nav-menu {
     background: hsla(228, 7.5%, 13.1%, 0.4);
     backdrop-filter: blur(0.4rem);
