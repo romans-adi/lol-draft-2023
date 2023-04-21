@@ -23,8 +23,12 @@
 </head>
 <body>
 <<<<<<< HEAD
+  <nav class="fixed md:static  md:shadow-lg md:shadow-black">
+=======
+<<<<<<< HEAD
   <nav class="fixed md:static">
 =======
+>>>>>>> main
 >>>>>>> main
   <div class="bg-stone-800 flex justify-center">
   <ul class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl w-full text-white gap-3 justify-end px-20 items-center text-sm">
@@ -42,7 +46,11 @@
   </ul>
 </div>
 <<<<<<< HEAD
+    <button type="button" class="nav-toggle inline-flex items-center pt-8 md:p-6 ml-3 text-sm md:hidden fixed z-40" aria-controls="nav-menu" aria-expanded="false">
+=======
+<<<<<<< HEAD
     <button type="button" class="nav-toggle inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden" aria-controls="nav-menu" aria-expanded="false">
+>>>>>>> main
       <span class="sr-only">Open main menu</span>
       <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
         <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
@@ -50,16 +58,16 @@
         <rect y="80" width="120" height="20" class="burger-line burger-line-bottom"></rect>
       </svg>
     </button>
-    <div class="items-center justify-between mx-auto px-8 py-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl">
+    <div class="items-center justify-between mx-auto md:px-8 pb-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl fixed md:static top-2">
       <a href="index.html" class="hidden md:flex items-center col logo">
           <img src="assets/img/event-logo.png" class="h-8 mr-3" alt="LIL Draft 2023 Logo" />
           <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum League<br />Draft 2023</span>
       </a>
-      <ul id="nav-menu" class="hidden nav-menu md:flex flex-col md:flex-row justify-around md:w-auto col-span-6 md:col-span-2 text-orange font-semibold md:text- md:text-stone-400 items-center" data-visible="false">
+      <ul id="nav-menu" class="nav-menu border-r-2 border-transparent rounded-r-lg text-2xl md:text-sm pt-10 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center" data-visible="false">
       <a href="about.html" target="_blank"><li class="nav-link p-2">About</li></a>
-      <a href="#"><li class="nav-link p-2">Tickets</li></a>
-      <a href="#"><li class="nav-link p-2">News</li></a>
-      <a href="#"><li class="nav-link p-2">Prospects</li></a>
+      <a href="about.html#location"><li class="nav-link p-2">Venue</li></a>
+      <a href="about.html#hall-of-fame" target="_blank"><li class="nav-link p-2">Hall of Fame</li></a>
+      <a href="#prospects"><li class="nav-link p-2">Prospects</li></a>
       <a href="#" class="hidden md:block league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold"><li>League pass</li></a>
     </ul>
     </div>
