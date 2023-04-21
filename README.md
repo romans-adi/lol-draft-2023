@@ -66,7 +66,7 @@ The project is built as a final project for the first module of Microverse (Caps
 
 - [Online version of my project](https://romans-adi.github.io/)
 
-<p align="right">(<a href="#readme-top">back to  top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- VIDEO PRESENTATION -->
 
