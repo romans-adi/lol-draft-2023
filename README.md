@@ -147,7 +147,7 @@ This project was deployed using:
 
 <!-- Future Features -->
 
-### Future Features <a name="future-features"></a>
+## :sunrise_over_mountains: Future Features <a name="future-features"></a>
 
 - **Adding new pages and fresh content**
 - **Connect website to the database to store players data**
