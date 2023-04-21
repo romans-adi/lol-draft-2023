@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem Ipsum league 2023 Draft Pick website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray: '#d3d3d3',
+            orange: '#ec5242',
+            darkblue: '#272a31'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <title>LIL Draft Picks 2023: Main</title>
+</head>
+<body>
+  <div class="bg-stone-800">
+  <ul class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl text-white gap-3 justify-end px-20 items-center text-sm">
+    <li class="bar-item"><img src="assets//img/GitHub.png" alt="GitHub"></li>
+    <li class="bar-item"><img src="assets/img/Twitter.png" alt="Twitter"></li>
+    <li class="bar-item">Logout</li>
+    <li class="bar-item">MyPage</li>
+    <li class="bar-item">
+      <select id="lang" class="bg-transparent block w-full focus:text-white focus:outline-none active:text-orange">
+        <option selected value="UK">English</option>
+        <option value="ES">Spanish</option>
+        <option value="FR">French</option>
+        <option value="DE">German</option>
+    </select></li>
+  </ul>
+</div>
+  <nav class="border-gray text-darkblue bg-transparent md:bg-white">
+    <button type="button" class="inline-flex items-center pt-6 md:p-6 ml-3 text-sm md:hidden burger" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg viewBox="0 0 120 110" width="40" height="40">
+        <rect y="0" width="120" height="20"></rect>
+        <rect y="40" width="120" height="20"></rect>
+        <rect y="80" width="120" height="20"></rect>
+        <span class="sr-only">Menu</span>
+      </svg>
+    </button>
+    <div class="hidden items-center justify-between mx-auto px-8 py-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl	">
+      <a href="index.html" class="flex items-center col logo">
+          <img src="assets/img/event-logo.png" class="h-8 mr-3" alt="LIL Draft 2023 Logo" />
+          <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum League<br />Draft 2023</span>
+      </a>
+      <div class="flex justify-around w-auto col-span-6 md:col-span-2 text-stone-400 items-center">
+      <a href="about.html"><div class="nav-link p-2">About</div></a>
+      <a href="#"><div class="nav-link p-2">Tickets</div></a>
+      <a href="#"><div class="nav-link p-2">News</div></a>
+      <a href="#"><div class="nav-link p-2">Prospects</div></a>
+      <a href="#" class="league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold">League pass</a>
+    </div>
+    </div>
+  </nav>
+        <header>
+          <div class="container flex flex-col mx-auto px-6 pb-10 md:w-2/4 md:ml-48">
+          <div class="flex flex-col mt-12">
+          <p class="text-orange"><span class="supporting-text md:text-4xl">"The Future Is Now"</span>
+          <h1 class="text-transparent uppercase header-heading leading-none py-2 md:text-6xl" >Leagues Players Draft 2023
+          </h1>
+        </div>
+        <div class="info p-6 my-6 border-4 border-white w-3/4">
+          <p class="text-stone-600 text-sm">The next generation of the Lorem Ipsum League takes center stage on the biggest night of the Lorem Ipsum offseason. For 20 players, their lifelong dream is made a reality. Follow us and get the latest updates!
+        </p></div>
+        <h2 class="text-stone-600 text-xl leading-loose">
+          <span class="uppercase date-time text-lg md:text-3xl">24.06.2023 (SAT)<br /> 19:00 (GMT)<br /></span>
+          <span class="font-semibold">@ Vilis Skuja conference hall, Lorem upon Ipsum, Grothland</span>
+        </h2>
+        </header>
+        </div>
+</body>
+</html>

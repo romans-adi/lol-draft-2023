@@ -47,7 +47,6 @@
     <li>Best practice of HTML and CSS</li>
     <li>Best practice of JavaScript</li>
     <li>Dynamical elements</li>
-    <li>NextGen images</li>
     <li>High performance and accessibility</li>
   </ul>
 
@@ -59,7 +58,7 @@
 
 - [Online version of my project](https://romans-adi.github.io/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to  top</a>)</p>
 
 <!-- VIDEO PRESENTATION -->
 
