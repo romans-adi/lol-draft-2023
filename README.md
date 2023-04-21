@@ -72,7 +72,7 @@ The project is built as a final project for the first module of Microverse (Caps
 
 ## :video_camera: Video Presentation <a name="video-presentation" target="_blank"></a>
 
-
+[Here](https://www.loom.com/share/55352cc9aa32486aae3865e8449b2701) you can see a short (5 min.) video presentation of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
