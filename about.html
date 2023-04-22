@@ -30,48 +30,49 @@
 
 <body>
   <nav class="fixed md:static md:shadow-lg md:shadow-black z-50">
-    <div class="bg-stone-800 flex justify-center">
+    <div class="bg-stone-800 grid grid-cols-10 justify-center col-span-5 flex-end items-center">
       <ul
-        class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl w-full text-white gap-3 justify-end px-20 items-center text-sm">
+        class="hidden md:flex col-span-4 bar z-20 w-full text-white gap-3 col-start-6 items-center text-sm justify-end pr-4">
         <li class="bar-item"><img src="assets//img/GitHub.png" alt="GitHub"></li>
         <li class="bar-item"><img src="assets/img/Twitter.png" alt="Twitter"></li>
         <li class="bar-item">Logout</li>
         <li class="bar-item">MyPage</li>
         <li class="bar-item">
-          <select id="lang" class="bg-transparent block w-full focus:text-white focus:outline-none active:text-orange">
-            <option selected value="UK">English</option>
-            <option value="ES">Spanish</option>
-            <option value="FR">French</option>
-            <option value="DE">German</option>
+          <select class="bg-transparent block w-full focus:text-white focus:outline-none active:text-orange" id="lang">
+            <option selected value="US">English</option>
+            <option value="ES">Español</option>
+            <option value="FR">Français</option>
+            <option value="DE">Deutsch</option>
           </select>
         </li>
       </ul>
     </div>
-    <button type="button" class="nav-toggle inline-flex items-center pt-8 md:p-6 ml-3 text-sm md:hidden fixed z-50"
+    <button class=" nav-toggle inline-flex items-center pt-8 md:p-2 ml-3 text-sm md:hidden fixed z-50" type="button"
       aria-controls="nav-menu" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
-      <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
-        <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
-        <rect y="40" width="120" height="20" class="burger-line burger-line-middle"></rect>
-        <rect y="80" width="120" height="20" class="burger-line burger-line-bottom"></rect>
+      <svg class="burger" viewBox="0 0 120 110" width="40" height="40">
+        <rect class="burger-line burger-line-top" y="0" width="120" height="20"></rect>
+        <rect class="burger-line burger-line-middle" y="40" width="120" height="20"></rect>
+        <rect class="burger-line burger-line-bottom" y="80" width="120" height="20"></rect>
       </svg>
     </button>
     <div
-      class="nav-menu border-r-2 3/6 sm:3/4 md:w-full border-transparent rounded-r-lg  items-center justify-between mx-auto md:px-8 pb-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl fixed md:static top-2"
+      class="nav-menu border-r-2 w-7/12 md:w-full border-transparent rounded-r-lg items-center md:grid grid-cols-10 justify-between mx-auto pb-2 gap-4 text-sm fixed md:static top-2"
       id="nav-menu" data-visible="false">
-      <a class="hidden md:flex items-center col logo" href="index.html" data-visible="false">
+      <a class="hidden md:flex items-center col-span-1 col-start-2 logo" href="index.html">
         <img class="h-8 mr-3" src="assets/img/event-logo.png" alt="LIL Draft 2023 Logo">
-        <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum
+        <span class="self-center md:text-12 text-xs text-darkblue font-semibold whitespace-nowrap lg:text-lg">Lorem
+          Ipsum
           League<br>Draft 2023</span>
       </a>
       <ul
-        class="text-2xl md:text-sm pt-16 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center">
-        <li class="nav-link p-2"><a href="index.html">Home</a></li>
-        <li class="nav-link p-2"><a href="#location">Venue</a></li>
-        <li class="nav-link p-2"><a href="#hall-of-fame">Hall of Fame</a></li>
-        <li class="nav-link p-2"><a href="index.html#prospects">Prospects</a></li>
+        class="pt-16 md:pt-2 md:text-12 text-center p-2 flex flex-col md:flex-row md:justify-between md:w-auto grid-cols-10 col-span-5 col-start-5 text-white font-semibold md:text-stone-400 items-center md:place-items-baseline">
+        <li class="nav-link p-2 col-span-2"><a href="index.html">Home</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="#location">Venue</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="#hall-of-fame">Hall of Fame</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="index.html#prospects">Prospects</a></li>
         <li><a href="#"
-            class="hidden md:block league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold">Get
+            class="hidden md:block league-pass capitalize p-1 lg:p-3 lg:text-sm text-xs text-orange hover:bg-orange hover:text-white hover:font-bold">Get
             Ticket</a></li>
       </ul>
     </div>
@@ -170,11 +171,12 @@
           <li class="flex"><img src="assets/img/partner-logo.png" class="p-2" alt="Partner Logo" /></li>
         </ul>
       </ul>
-      <div class="w-full px-14 md:bg-gradient-to-r from-zinc-700 from-20% via-zinc-600 via-60% to-zinc-700 to-90%">
-        <div class="flex h-2/4 justify-around py-14 md:py-6 items-center">
-          <div class="flex pr-10">
+      <div
+        class="w-full md:px-36 text-stone-600 flex-1 flex flex-col items-center justify-center md:bg-gradient-to-r from-zinc-700 from-20% via-zinc-600 via-60% to-zinc-700 to-90%">
+        <div class="flex h-2/4 justify-around py-14 md:py-6 items-center md:px-0 px-14">
+          <div class="flex pr-4">
             <img src="assets/img/logo.png" class="w-80 md:w-48 p-2 md:hidden" alt="LIL Logo" />
-            <img src="assets/img/logo-light.png" class="w-80 md:w-48 p-2 hidden md:block" alt="LIL Logo" />
+            <img src="assets/img/logo-light.png" class="w-80 p-2 hidden md:block" alt="LIL Logo" />
           </div>
           <div class="copyright flex flex-col text-darkblue md:text-zinc-100">
             <p>© 2023 LIL Media Ventures. All rights reserved.</p>

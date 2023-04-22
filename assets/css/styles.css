@@ -197,6 +197,10 @@ select option {
   font-weight: 600;
 }
 
+.text-12 {
+  font-size: 12px;
+}
+
 .league-pass {
   border: 4px solid #ec5242;
   transition: all 300ms ease-in;
@@ -419,13 +423,13 @@ select option {
     z-index: 70;
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
-    font-size: 20px;
     border-radius: 8%;
   }
 
   #nav-menu ul li a {
     transition: all 500ms ease-out;
     letter-spacing: 0.166rem;
+    font-size: 1.4rem;
     margin: 0.4rem 0;
   }
 
