@@ -201,8 +201,8 @@ select option {
   font-size: 12px;
 }
 
-.league-pass {
-  border: 4px solid #ec5242;
+.ticket {
+  border: 3px solid #ec5242;
   transition: all 300ms ease-in;
 }
 
