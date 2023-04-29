@@ -1,5 +1,9 @@
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+/* ANIMATIONS */
 
 @-webkit-keyframes bounce-top {
   0% {
@@ -121,9 +125,27 @@
   }
 }
 
+/* COMMON STYLES */
+
 * {
   padding: 0;
   margin: 0;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 10px;
+  background-color: #ec5242;
+}
+
+::-webkit-scrollbar:hover {
+  background: #e5e5e5;
 }
 
 html {
@@ -150,6 +172,18 @@ main {
 
 footer {
   flex: 0 0 auto;
+}
+
+.min-w-7r {
+  min-width: 7rem;
+}
+
+.max-w-15r {
+  max-width: 15rem;
+}
+
+.z-negative {
+  z-index: -1;
 }
 
 select {
@@ -183,8 +217,12 @@ select option {
   font-weight: 600;
 }
 
-.league-pass {
-  border: 4px solid #ec5242;
+.text-12 {
+  font-size: 12px;
+}
+
+.ticket {
+  border: 3px solid #ec5242;
   transition: all 300ms ease-in;
 }
 
@@ -395,6 +433,7 @@ select option {
   .nav-menu [data-visible=true] {
     transform: translateX(0%);
     display: flex;
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -404,14 +443,13 @@ select option {
     z-index: 70;
     margin: 1rem 1rem 0 0;
     transition: transform 800ms ease-in-out;
-    width: 40%;
-    font-size: 20px;
     border-radius: 8%;
   }
 
   #nav-menu ul li a {
     transition: all 500ms ease-out;
     letter-spacing: 0.166rem;
+    font-size: 1.4rem;
     margin: 0.4rem 0;
   }
 
@@ -436,7 +474,6 @@ select option {
 @media screen and (min-width: 768px) {
   .partners-heading::after {
     max-width: 40%;
-    margin: 1rem auto 3rem;
   }
 
   .hall-of-famer {

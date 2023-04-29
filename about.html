@@ -29,53 +29,55 @@
 </head>
 
 <body>
-  <nav class="fixed md:static md:shadow-lg md:shadow-black z-50">
-    <div class="bg-stone-800 flex justify-center">
+  <nav class="fixed md:static md:shadow-lg md:shadow-zinc-500 z-50">
+    <div class="bg-stone-800 justify-center md:flex flex-end items-center">
       <ul
-        class="hidden md:flex bar h-5 py-5 z-20 max-w-screen-2xl w-full text-white gap-3 justify-end px-20 items-center text-sm">
+        class="hidden md:flex col-span-4 bar z-20 w-3/4 max-w-6xl text-white gap-3 col-start-6 items-center text-sm justify-end pr-4">
         <li class="bar-item"><img src="assets//img/GitHub.png" alt="GitHub"></li>
         <li class="bar-item"><img src="assets/img/Twitter.png" alt="Twitter"></li>
         <li class="bar-item">Logout</li>
         <li class="bar-item">MyPage</li>
         <li class="bar-item">
-          <select id="lang" class="bg-transparent block w-full focus:text-white focus:outline-none active:text-orange">
-            <option selected value="UK">English</option>
-            <option value="ES">Spanish</option>
-            <option value="FR">French</option>
-            <option value="DE">German</option>
+          <select class="bg-transparent block w-full focus:text-white focus:outline-none active:text-orange" id="lang">
+            <option selected value="US">English</option>
+            <option value="ES">Español</option>
+            <option value="FR">Français</option>
+            <option value="DE">Deutsch</option>
           </select>
         </li>
       </ul>
     </div>
-    <button type="button" class="nav-toggle inline-flex items-center pt-8 md:p-6 ml-3 text-sm md:hidden fixed z-50"
+    <button class=" nav-toggle inline-flex items-center pt-8 md:p-2 ml-3 text-sm md:hidden fixed z-50" type="button"
       aria-controls="nav-menu" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
-      <svg viewBox="0 0 120 110" width="40" height="40" class="burger">
-        <rect y="0" width="120" height="20" class="burger-line burger-line-top"></rect>
-        <rect y="40" width="120" height="20" class="burger-line burger-line-middle"></rect>
-        <rect y="80" width="120" height="20" class="burger-line burger-line-bottom"></rect>
+      <svg class="burger" viewBox="0 0 120 110" width="40" height="40">
+        <rect class="burger-line burger-line-top" y="0" width="120" height="20"></rect>
+        <rect class="burger-line burger-line-middle" y="40" width="120" height="20"></rect>
+        <rect class="burger-line burger-line-bottom" y="80" width="120" height="20"></rect>
       </svg>
     </button>
     <div
-      class="items-center nav-menu justify-between mx-auto md:px-8 pb-2 md:grid grid-cols-3 gap-4 text-sm max-w-screen-2xl fixed md:static top-2"
+      class="nav-menu border-r-2 border-transparent rounded-r-lg items-center w-full md:w-3/4 max-w-6xl md:flex justify-between mx-auto pb-2 gap-4 text-sm fixed md:static top-2"
       id="nav-menu" data-visible="false">
-      <a class="hidden md:flex items-center col logo" href="index.html" data-visible="false">
-        <img class="h-8 mr-3" src="assets/img/event-logo.png" alt="LIL Draft 2023 Logo">
-        <span class="self-center text-darkblue font-semibold whitespace-nowrap text-xs md:text-lg">Lorem Ipsum
+      <a class="hidden md:flex items-center logo" href="index.html">
+        <img class="h-10 mr-3" src="assets/img/event-logo.png" alt="LIL Draft 2023 Logo">
+        <span class="self-center md:text-12 text-xs text-darkblue font-semibold whitespace-nowrap lg:text-lg">Lorem
+          Ipsum
           League<br>Draft 2023</span>
       </a>
       <ul
-        class="border-r-2 border-transparent rounded-r-lg text-2xl md:text-sm pt-16 md:pt-2 p-2 flex flex-col md:flex-row md:justify-around md:w-auto col-span-6 md:col-span-2 text-white font-semibold md:text-stone-400 items-center">
-          <li class="nav-link p-2"><a href="index.html">Home</a></li>
-          <li class="nav-link p-2"><a href="#location">Venue</a></li>
-          <li class="nav-link p-2"><a href="#hall-of-fame">Hall of Fame</a></li>
-          <li class="nav-link p-2"><a href="index.html#prospects">Prospects</a></li>
-          <li><a href="#"
-            class="hidden md:block league-pass capitalize p-3 text-orange hover:bg-orange hover:text-white hover:font-bold">Get Ticket</a></li>
+        class="pt-16 md:pt-2 md:text-12 text-center p-2 flex flex-col md:flex-row md:justify-between gap-3 text-white font-semibold md:text-stone-400 items-center md:place-items-baseline">
+        <li class="nav-link p-2 col-span-2"><a href="index.html">Home</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="#location">Venue</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="#hall-of-fame">Hall of Fame</a></li>
+        <li class="nav-link p-2 col-span-2"><a href="index.html#prospects">Prospects</a></li>
+        <li><a href="#"
+            class="hidden md:block ticket capitalize p-1 lg:p-2 text-orange hover:bg-orange hover:text-white hover:font-bold">Get
+            Ticket</a></li>
       </ul>
     </div>
   </nav>
-  <div id="wrapper" class="wrapper flex flex-col h-full">
+  <div id="wrapper" class="wrapper flex flex-col h-full absolute z-negative">
     <header class="h-100 text-stone-600 text-center pt-20">
       <div class="container flex flex-col mx-auto px-6 pb-10 md:w-2/4">
         <div class="flex flex-col md:mt-12 items-center justify-center">
@@ -104,14 +106,14 @@
           <div
             class="hall relative flex flex-col items-center justify-center text-center md:w-1/2 hover:cursor-pointer">
             <img src="assets/img/hall.jpg" class="conference-img" alt="Vilis Skuja Conference Hall">
-            <p
-              class="hall-img-content-text absolute uppercase tracking-wider z-40 text-white text-2xl font-semibold">
+            <p class="hall-img-content-text absolute uppercase tracking-wider z-40 text-white text-2xl font-semibold">
               Open gallery</p>
           </div>
           <p
-            class="text-justify px-6 text-stone-600 flex flex-col justify-center md:indent-8 md:w-1/2 md:ml-4 md:text-xl">
+            class="text-justify px-2 md:px-6 text-stone-600 flex flex-col justify-center md:indent-8 md:w-1/2 md:ml-4 md:text-xl">
             Vilis Skuja conference hall with an area of 20,800m2 is available for large-scale gatherings of 60,000
-            people maximum is located in Vilis Skuja Business Centre just in the heart of Lorem upon Ipsum city. It's
+            people maximum is located in Vilis Skuja Business Centre just in the heart of Lorem upon Ipsum downtown.
+            It's
             equipped with an additional banquet halls and up-to-date facilities for holding various events like
             international conventions and business seminars. Our league representatives with the Vilis Skuja team offer
             you a great and wide range of services during this day. Our main goal is to make your day joyful and
@@ -169,11 +171,12 @@
           <li class="flex"><img src="assets/img/partner-logo.png" class="p-2" alt="Partner Logo" /></li>
         </ul>
       </ul>
-      <div class="w-full px-14 md:bg-gradient-to-r from-zinc-700 from-20% via-zinc-600 via-60% to-zinc-700 to-90%">
-        <div class="flex h-2/4 justify-around py-14 md:py-6 items-center">
-          <div class="flex pr-10">
-            <img src="assets/img/logo.png" class="w-80 md:w-48 p-2 md:hidden" alt="LIL Logo" />
-            <img src="assets/img/logo-light.png" class="w-80 md:w-48 p-2 hidden md:block" alt="LIL Logo" />
+      <div
+        class="w-full md:px-36 text-stone-600 flex-1 flex flex-col items-center justify-center md:bg-gradient-to-r from-zinc-700 from-20% via-zinc-600 via-60% to-zinc-700 to-90%">
+        <div class="flex h-2/4 justify-around py-14 md:py-6 items-center md:px-0 px-14">
+          <div class="flex pr-4">
+            <img src="assets/img/logo.png" class="min-w-7r w-9/12 max-w-15r p-2 md:hidden" alt="LIL Logo" />
+            <img src="assets/img/logo-light.png" class="min-w-7r w-9/12 max-w-15r p-2 hidden md:block" alt="LIL Logo" />
           </div>
           <div class="copyright flex flex-col text-darkblue md:text-zinc-100">
             <p>© 2023 LIL Media Ventures. All rights reserved.</p>
