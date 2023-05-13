@@ -1,5 +1,4 @@
-import { Body } from 'node-fetch';
-import '../css/styles.css'
+import '../css/styles.css';
 
 const navMenu = document.querySelector('.nav-menu');
 const navToggle = document.querySelector('.nav-toggle');

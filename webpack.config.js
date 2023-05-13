@@ -4,33 +4,33 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
-const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
+const stylesHandler = isProduction
+  ? MiniCssExtractPlugin.loader
+  : 'style-loader';
 
 module.exports = {
-    entry: {
-        index: './src/assets/js/index.js'
-      },
-      output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
-      },
-      plugins: [
-        new HtmlWebpackPlugin({
-          title: 'Main',
-          template: './src/index.html',
-          filename: 'index.html',
-          chunks: ['index']
-        }),
-        new HtmlWebpackPlugin({
-          title: 'About',
-          template: './src/about.html',
-          filename: 'about.html',
-          chunks: ['about']
-        }),
+  entry: {
+    index: './src/assets/js/index.js',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Main',
+      template: './src/index.html',
+      filename: 'index.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'About',
+      template: './src/about.html',
+      filename: 'about.html',
+      chunks: ['about'],
+    }),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: './src/assets/img', to: './assets/img' },
-      ],
+      patterns: [{ from: './src/assets/img', to: './assets/img' }],
     }),
     isProduction && new MiniCssExtractPlugin(),
   ].filter(Boolean),
